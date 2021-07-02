@@ -64,7 +64,7 @@ endif
 
 OBJS  = $(FILES:%=%.o)
 
-SUBDIRS = ia32 x86_64 ia64 aarch64 arm mips64el riscv64 runtime
+SUBDIRS = ia32 x86_64 ia64 aarch64 arm mips64el riscv64 loongarch64 runtime
 
 LIBDIRINSTALL = $(INSTALLROOT)$(LIBDIR)
 
