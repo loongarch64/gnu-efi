@@ -136,7 +136,6 @@ ifeq ($(ARCH),mips64el)
 endif
 
 ifeq ($(ARCH),loongarch64)
-  CFLAGS += -march=loongarch64
   ARCH3264 = -mabi=lp64
 endif
 

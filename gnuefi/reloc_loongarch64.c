@@ -1,7 +1,7 @@
-/* reloc_loongarch64.c - position independent x86 ELF shared object relocator
+/* reloc_loongarch64.c - position independent loongarch64 ELF shared object relocator
+   Copyright (C) 2021 Zhou mingtao <zhoumingtao@loongson.cn>
    Copyright (C) 2014 Linaro Ltd. <ard.biesheuvel@linaro.org>
    Copyright (C) 1999 Hewlett-Packard Co.
-   Copyright (C) 2021 Zhou mingtao <zhoumingtao@loongson.cn>
 	Contributed by David Mosberger <davidm@hpl.hp.com>.
 
     All rights reserved.
@@ -41,8 +41,8 @@
 #include <elf.h>
 
 EFI_STATUS _relocate (long ldbase, Elf64_Dyn *dyn,
-		      EFI_HANDLE image EFI_UNUSED,
-		      EFI_SYSTEM_TABLE *systab EFI_UNUSED)
+		       EFI_HANDLE image EFI_UNUSED,
+		       EFI_SYSTEM_TABLE *systab EFI_UNUSED)
 {
 	long relsz = 0, relent = 0;
 	Elf64_Rela *rel = 0;

@@ -52,7 +52,8 @@ draw_boxes(EFI_GRAPHICS_OUTPUT_PROTOCOL *gop)
 	UINT32 *PixelBuffer;
 	UINT32 CopySize, BufferSize;
 #if defined(__x86_64__) || defined(__aarch64__) || \
-    (defined (__riscv) && __riscv_xlen == 64) || defined(__loongarch64)
+    (defined (__riscv) && __riscv_xlen == 64) || \
+    defined(__loongarch64)
 	UINT64 FrameBufferAddr;
 #elif defined(__i386__) || defined(__arm__)
 	UINT32 FrameBufferAddr;
