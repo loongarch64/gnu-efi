@@ -121,7 +121,7 @@ section_table:
 	.short	0			// NumberOfLineNumbers  (0 for executables)
 	.long	0xe0500020		// Characteristics (section flags)
 
-	.align		4
+	.align  4
 
 	.globl	_start
 	.type	_start, @function
@@ -135,7 +135,7 @@ _start:
 	move	  $a3, $a1 		// a3: SystemTable
 	la.local  $a0, ImageBase	// a0: ImageBase
 	la.local  $a1, _DYNAMIC		// a1: DynamicSection
-	bl 	  	_relocate
+	bl        _relocate
 	bnez	  $a0, 0f
 
 	ld.d	  $a0, $sp, 8
