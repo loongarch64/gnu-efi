@@ -136,7 +136,7 @@ ifeq ($(ARCH),mips64el)
 endif
 
 ifeq ($(ARCH),loongarch64)
-  ARCH3264 = -mabi=lp64
+  ARCH3264 = -mabi=lp64s
 endif
 
 #

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2006 - 2008, Intel Corporation. All rights reserved.
  * Copright (c) 2021 Loongson Co.
- * Author: Zhou mingtao <zhoumingtao@loongson.cn>
+ * Author: Zhou Mingtao <zhoumingtao@loongson.cn>
  *
  * This program and the accompanying materials are licensed and made
  * available
@@ -39,7 +39,7 @@ setjmp:
 	st.d $s8, $a0, 0x58
 
 	move $a0, $zero
-	jirl $zero,$ra,0
+	jr $ra
 
 /*
    void longjmp(jmp_buf env, int val);
@@ -64,4 +64,4 @@ longjmp:
 	beqz $a1, .L0		# if (a1 == 0); goto L0
 	move $a0, $a1		# a0 = a1
 .L0:
-	jirl $zero,$ra,0
+	jr $ra
