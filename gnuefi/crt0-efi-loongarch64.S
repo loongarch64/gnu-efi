@@ -2,7 +2,7 @@
  * crt0-efi-loongarch64.S - PE/COFF header for LOONGARCH64 EFI applications
  *
  * Copyright (C) 2014 Linaro Ltd. <ard.biesheuvel@linaro.org>
- * Copyright (C) 2021 Zhou mingtao <zhoumingtao@loongson.cn>
+ * Copyright (C) 2021 Zhou Mingtao <zhoumingtao@loongson.cn>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -144,5 +144,5 @@ _start:
 
 0:	ld.d	  $ra, $sp, 0
 	addi.d	  $sp, $sp, 24
-	jirl	  $ra, $ra, 0
+	jr        $ra
 	.end	  _start

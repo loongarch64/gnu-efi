@@ -1,5 +1,5 @@
 /* reloc_loongarch64.c - position independent loongarch64 ELF shared object relocator
-   Copyright (C) 2021 Zhou mingtao <zhoumingtao@loongson.cn>
+   Copyright (C) 2021 Zhou Mingtao <zhoumingtao@loongson.cn>
    Copyright (C) 2014 Linaro Ltd. <ard.biesheuvel@linaro.org>
    Copyright (C) 1999 Hewlett-Packard Co.
 	Contributed by David Mosberger <davidm@hpl.hp.com>.

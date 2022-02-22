@@ -68,11 +68,7 @@ Available 00000000709FC000-00000000710E3FFF 00000000000006E8 000000000000000F
 
 #define MAX_NUM_PAGES 0x000000000F000000
 
-#ifdef __loongarch64
-#define MAX_ADDR (((9ULL << 60) | (0xC << 28)) -1)
-#else
 #define MAX_ADDR ((1ULL << 46) - 1)
-#endif
 
 #ifdef DEBUG
 #undef DEBUG
