@@ -156,7 +156,9 @@ endif
 endif
 
 ifneq ($(ARCH),arm)
+ifneq ($(ARCH),loongarch64)
 export LIBGCC=$(shell $(CC) $(ARCH3264) -print-libgcc-file-name)
+endif
 endif
 
 ifeq ($(ARCH),arm)
