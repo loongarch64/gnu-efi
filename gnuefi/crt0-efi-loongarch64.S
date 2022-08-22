@@ -16,6 +16,9 @@
  * GNU General Public License as published by the Free Software Foundation;
  * either version 2 of the License, or (at your option) any later version.
  */
+#ifndef EFI_SUBSYSTEM
+#define EFI_SUBSYSTEM 10
+#endif
 
 	.section	.text.head
 
