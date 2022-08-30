@@ -135,10 +135,6 @@ ifeq ($(ARCH),mips64el)
   ARCH3264 = -mabi=64
 endif
 
-ifeq ($(ARCH),loongarch64)
-  ARCH3264 = -mabi=lp64s
-endif
-
 #
 # Set HAVE_EFI_OBJCOPY if objcopy understands --target efi-[app|bsdrv|rtdrv],
 # otherwise we need to compose the PE/COFF header using the assembler
