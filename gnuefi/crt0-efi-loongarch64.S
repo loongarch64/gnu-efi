@@ -149,3 +149,7 @@ _start:
 	addi.d	  $sp, $sp, 24
 	jr        $ra
 	.end	  _start
+
+#if defined(__ELF__) && defined(__linux__)
+	.section .note.GNU-stack,"",%progbits
+#endif

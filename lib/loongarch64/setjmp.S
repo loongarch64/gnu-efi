@@ -65,3 +65,7 @@ longjmp:
 	move $a0, $a1		# a0 = a1
 .L0:
 	jr $ra
+
+#if defined(__ELF__) && defined(__linux__)
+	.section .note.GNU-stack,"",%progbits
+#endif
